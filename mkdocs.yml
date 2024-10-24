@@ -1,0 +1,103 @@
+site_name: Pediafy
+site_url: https://pediafy.github.io
+site_author: Pediafy
+site_description: Pediafy For Everyone
+
+copyright: Copyright &copy; 2024 Pediafy
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+
+  font:
+    text: Open Sans
+    code: Noto Sans
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    #- navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    #- navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+plugins:
+  - search
+  - blog:
+      enabled: false
+      blog_dir: blog
+      blog_toc: true
+      post_dir: "{blog}/articles"
+      post_date_format: medium
+      categories: false
+      categories_name: Categories
+      post_url_format: "{categories}/{slug}"
+      post_url_max_categories: 2
+
+extra:
+  homepage: https://example.com
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com
+      name: pediafy on instagram
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com
+      name: pediafy on facebook
+    - icon: fontawesome/brands/whatsapp
+      link: https://whatsapp.com
+      name: pediafy on whatsapp
+    - icon: fontawesome/brands/discord
+      link: https://discord.com
+      name: pediafy on discord
+    - icon: fontawesome/brands/signal-messenger
+      link: https://signal.com
+      name: pediafy on signal
+
+nav:
+  - Home: index.md
+  - Documentation: 
+      - Docs: documentation/index.md
+      - CSS: documentation/css/index.md
+      - css1: documentation/css/cssc/css1.md
+      - JAVA: documentation/java/index.md
+      - HTML: documentation/html/index.md
+  - Blog:
+      - Blogs: blog/index.md
